@@ -31,7 +31,7 @@ Where are 30-day readmission rates highest in Canada, which diagnoses drive the 
 | `01_clean_explore.py` | Load, clean, profile — Data Detective hat |
 | `02_analysis.py` | Core analysis — rates, rankings, trends, scenarios |
 | `03_sql_queries.sql` | All key queries in SQL |
-| `tableau_spec.md` | Step-by-step Tableau dashboard guide |
+| `dashboard.md` | Live tableau Dashboard |
 | `quality_committee_brief.md` | One-page plain-language findings |
 
 ---
