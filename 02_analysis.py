@@ -122,13 +122,14 @@ print("""
      COPD, Heart Failure, and Sepsis drive the most
      readmissions. A 10% reduction through 48-hour
      phone follow-up and medication reconciliation
-     saves an estimated $8–10M annually.
+     saves an estimated $27.5M annually nationally.
 
-  3. COVID LEGACY — Sustained Primary Care Gap
-     The 2020 spike in readmissions has not fully reversed,
-     suggesting disrupted follow-up care became permanent
-     for some patients. Targeted re-attachment to primary
-     care for post-hospital patients is needed.
+  3. COVID RECOVERY — NEAR-COMPLETE BUT UNEVEN
+     The 2020 spike (1.0pp above pre-COVID) has largely
+     reversed — the national gap is now only 0.2pp.
+     However, Atlantic provinces are recovering more slowly.
+     Province-level monitoring dashboards should track
+     where the remaining gap is concentrated.
 
   4. DATA IMPROVEMENT
      CIHI should publish readmission rates by discharge
