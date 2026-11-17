@@ -1,9 +1,9 @@
-"""
-Project 1 – simulate_cihi_data.py
-Builds a representative hospital readmission dataset
-from published CIHI aggregate figures (2018–2022).
-Run this if you have not yet downloaded the real CIHI file.
-Real data: https://www.cihi.ca/en/quick-stats
+"""Generate synthetic hospital-readmission records for a methods demonstration.
+
+All province baseline values, diagnosis multipliers and scenario assumptions
+are illustrative parameters, not verified CIHI estimates. The code does not
+download or process a genuine CIHI patient- or hospital-level export.
+Official research starting point: https://www.cihi.ca/en/quick-stats
 """
 
 import pandas as pd
@@ -13,8 +13,7 @@ np.random.seed(1)
 
 PROVINCES = ["BC","AB","SK","MB","ON","QC","NB","NS","PE","NL"]
 
-# Published CIHI 30-day readmission rates (%) by province
-# Source: CIHI Health System Performance indicator reports
+# Illustrative provincial starting rates (%) — NOT official CIHI estimates
 PROV_RATES = {
     "BC":8.4,"AB":8.1,"SK":8.9,"MB":9.2,"ON":8.6,
     "QC":7.8,"NB":9.6,"NS":9.8,"PE":9.1,"NL":10.1
