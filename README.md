@@ -1,8 +1,10 @@
 # Project 1: Canadian Hospital Readmission Analysis
 
+> **DATA PROVENANCE AND INTERPRETATION:** This is a portfolio demonstration using simulated/constructed analytical records informed by named Canadian public-health sources. Numerical outputs from generated records are **illustrative**, not official observed estimates or verified national findings. Scenarios are not measured policy outcomes. Download links identify sources for a future independently verified analysis, not proof that the generated records reproduce their values.
+
 **Domain:** Acute Care / Hospital Quality
 **Tools:** Python · SQL · Tableau
-**Real Data Source:** CIHI Quick Stats — Hospital Indicators
+**Public reference source (not the generated analysis dataset):** CIHI Quick Stats — Hospital Indicators
 **Download:** https://www.cihi.ca/en/quick-stats → Hospital Care → Download CSV (free, no registration)
 
 ---
@@ -12,7 +14,7 @@ Where are 30-day readmission rates highest in Canada, which diagnoses drive the 
 
 ---
 
-## Analyst Roles
+## Analytical Tasks Demonstrated
 
 | Hat | What I Did |
 |-----|-----------|
@@ -24,7 +26,7 @@ Where are 30-day readmission rates highest in Canada, which diagnoses drive the 
 
 ---
 
-## Key Findings
+## Illustrative Results From Simulated Data
 
 1. **Atlantic provinces carry the highest burden.** NL (12.7%), NS (12.3%), and NB (12.1%) all exceed the national average of 11.1%. The Atlantic region averages 1.4 percentage points above the rest of Canada — a consistent and addressable gap.
 
@@ -32,7 +34,7 @@ Where are 30-day readmission rates highest in Canada, which diagnoses drive the 
 
 3. **COVID caused a measurable but temporary spike.** The 2020 rate rose 1.0 percentage point above pre-COVID levels. By 2022 rates had recovered to within 0.2pp of the pre-COVID baseline — near-full recovery but with lingering effects in Atlantic provinces.
 
-4. **A 10% reduction in top-3 diagnosis readmissions saves $27.5M annually.** COPD, Heart Failure, and Sepsis combined represent 29,884 readmissions in scope. At an estimated $9,200 per acute care episode (CIHI), a 10% reduction through structured discharge follow-up saves approximately $27.5M per year nationally.
+4. **An assumed 10% reduction in top-3 diagnosis readmissions produces an illustrative $27.5M gross cost-avoidance scenario.** COPD, Heart Failure, and Sepsis combined represent 29,884 readmissions in scope. At an estimated $9,200 per acute care episode (CIHI), a 10% reduction through structured discharge follow-up saves approximately $27.5M per year nationally.
 
 ---
 
@@ -44,7 +46,7 @@ Views included: readmission rate by province, year-over-year trend by diagnosis,
 
 ---
 
-## Strategic Recommendations
+## Hypothetical Recommendations for Further Evaluation
 
 1. **Atlantic Canada — post-discharge navigator program.**
    NL, NS, NB, and PE consistently run 1–2pp above the national average. Assign a post-discharge navigator role at regional hospitals specifically for COPD and Heart Failure patients discharged to home. A 48-hour follow-up call and medication reconciliation protocol is the lowest-cost, highest-impact intervention available.
@@ -90,5 +92,8 @@ python 02_analysis.py          # full analysis and recommendations
 
 ---
 
-## Data Note
+## Data Provenance and Limitations
+
+This project demonstrates a hospital quality analysis on generated readmission records. Provincial rates, diagnosis rankings, COVID trends and facility outcomes shown here are illustrative simulated results, not official CIHI estimates. The $27.5 million calculation is a gross cost-avoidance scenario: 29,884 assumed episodes × 10% assumed reduction × $9,200 assumed average cost ≈ $27.5 million. It excludes implementation costs, differences between average and marginal costs, and uncertainty about effectiveness. High readmission rates do not establish a high absolute count of preventable returns. Confirm all indicator definitions and source values against CIHI before citing them as observed findings.
+
 CIHI does not release patient-level discharge records publicly. This project uses simulated data anchored to published CIHI provincial readmission rate indicators. The analytical methodology reflects the approach used in real hospital quality improvement roles. All source statistics are cited inline in `simulate_cihi_data.py`.
