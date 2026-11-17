@@ -1,5 +1,12 @@
 # Project 1: Canadian Hospital Readmission Analysis
 
+## Reviewed interactive dashboard (no Power BI login required)
+
+[**Open the Synthetic hospital readmission visualization**](https://famiyke.github.io/health-data-portfolio/dashboards/readmissions.html)
+
+This corrected browser version uses generated records, excludes real hospital-performance claims and shows synthetic weighted rates. The web dashboard is distinct from the older PBIX or Tableau visualization. Those legacy files were **not edited or republished** and should not be used as validated outputs.
+
+
 > **PROJECT VALIDATION STATUS:** The Python demonstration workflow has passed GitHub Actions. Generated model parameters and subgroup comparisons are synthetic. No synthetic values should be described as verified official health-system statistics. See [SOURCE_VALIDATION.md](SOURCE_VALIDATION.md) for the evidence boundary.\n\n
 > **DATA PROVENANCE AND INTERPRETATION:** This is a portfolio demonstration using simulated/constructed analytical records informed by named Canadian public-health sources. Numerical outputs from generated records are **illustrative**, not official observed estimates or verified national findings. Scenarios are not measured policy outcomes. Download links identify sources for a future independently verified analysis, not proof that the generated records reproduce their values.
 
