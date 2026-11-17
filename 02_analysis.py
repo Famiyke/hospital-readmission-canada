@@ -4,6 +4,10 @@ PROGRAMMER + STORYTELLER + CONSULTANT HATS
 Full readmission analysis: rankings, trends, scenarios.
 """
 
+# PORTFOLIO DATA NOTICE: All computed findings below use simulated/generated
+# analytical records, not verified official Canadian statistics. Numeric outputs
+# illustrate methods only; any program recommendations require source validation.
+
 import pandas as pd
 import numpy as np
 
@@ -108,32 +112,17 @@ for pct in [5, 10, 15]:
     saving = saved * COST_PER_READMIT
     print(f"  {pct}% reduction → {saved:,} fewer readmissions → ${saving:,.0f} saved")
 
-print(f"\n{'─'*62}")
-print("STRATEGIC RECOMMENDATIONS")
-print(f"{'─'*62}")
+print("\\nILLUSTRATIVE INTERPRETATION AND NEXT STEPS")
+print("-" * 62)
 print("""
-  1. PRIORITY REGION — Atlantic Canada
-     NL, NS, NB, and PE run 1–2 percentage points above
-     the national average. Assign a post-discharge navigator
-     role at regional hospitals for COPD and Heart Failure
-     patients discharged to home.
+These results come from a generated portfolio dataset. They are not
+verified Canadian population or health-system estimates.
 
-  2. DIAGNOSIS PROTOCOL — Top 3 Focus
-     COPD, Heart Failure, and Sepsis drive the most
-     readmissions. A 10% reduction through 48-hour
-     phone follow-up and medication reconciliation
-     saves an estimated $27.5M annually nationally.
-
-  3. COVID RECOVERY — NEAR-COMPLETE BUT UNEVEN
-     The 2020 spike (1.0pp above pre-COVID) has largely
-     reversed — the national gap is now only 0.2pp.
-     However, Atlantic provinces are recovering more slowly.
-     Province-level monitoring dashboards should track
-     where the remaining gap is concentrated.
-
-  4. DATA IMPROVEMENT
-     CIHI should publish readmission rates by discharge
-     destination (home, LTC, rehab) to pinpoint exactly
-     where follow-up care is failing.
+Potential next steps for a real-world study:
+1. Obtain and validate authoritative source data and definitions.
+2. Recalculate differences, including denominators and uncertainty.
+3. Work with clinical, community or operational partners to assess
+   feasibility and avoid treating associations as causal effects.
+4. Treat cost differences and savings as sensitivity-tested scenarios,
+   not realized outcomes or established policy recommendations.
 """)
-print(sep)
