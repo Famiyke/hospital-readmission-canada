@@ -60,7 +60,7 @@ Use the simulated findings to demonstrate analytical methods, not to rank actual
 2. Select **Hospital Care → Inpatient Hospitalizations**
 3. Click **Download data** (CSV)
 4. Rename to `cihi_hospital.csv` and place in this folder
-5. Run `python 01_clean_explore.py` — it auto-detects real vs. demo data
+5. Run `python 01_clean_explore.py` — the supplied code expects the demonstration data schema; adapt the import and validate columns first
 
 ## How to Run (demo mode — no download needed)
 ```bash
@@ -77,3 +77,12 @@ python 02_analysis.py          # full analysis and recommendations
 This project demonstrates a hospital quality analysis on generated readmission records. Provincial rates, diagnosis rankings, COVID trends and facility outcomes shown here are illustrative simulated results, not official CIHI estimates. The $27.5 million calculation is a gross cost-avoidance scenario: 29,884 assumed episodes × 10% assumed reduction × $9,200 assumed average cost ≈ $27.5 million. It excludes implementation costs, differences between average and marginal costs, and uncertainty about effectiveness. High readmission rates do not establish a high absolute count of preventable returns. Confirm all indicator definitions and source values against CIHI before citing them as observed findings.
 
 CIHI does not release patient-level discharge records publicly. This project uses simulated data anchored to published CIHI provincial readmission rate indicators. The analytical methodology reflects the approach used in real hospital quality improvement roles. All source statistics are cited inline in `simulate_cihi_data.py`.
+
+---
+
+## Reproducibility and execution status
+
+**Environment:** Python 3 with `pandas` and `numpy` installed. If working with the Excel files, install `openpyxl` as needed. Run the simulation script before the analysis commands shown above.
+
+**Important:** The scripts are designed for the generated datasets and expected column names. Downloading a public government table does **not** guarantee that it will run with these scripts unchanged; a schema-mapping and validation step is required for authentic external data. The repository has undergone a static documentation and code-reference audit, but a fresh environment execution and independent reconciliation with official datasets have not yet been completed.
+
